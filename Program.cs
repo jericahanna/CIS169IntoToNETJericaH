@@ -5,6 +5,8 @@ using CIS169IntroToNET.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Jerica Hanna Unit 6 Final C#
+
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<CIS169IntroToNETContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("CIS169IntroToNETContext") ?? throw new InvalidOperationException("Connection string 'CIS169IntroToNETContext' not found.")));
